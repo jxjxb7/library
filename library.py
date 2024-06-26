@@ -9,7 +9,7 @@ from sqlalchemy.exc import IntegrityError
 app = FastAPI()
 
 # Настройка базы данных MySQL
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_p_Zasoba:12345@192.168.25.23/isp_p_Zasoba"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_p_Zasoba:12345@/77.91.86.135/isp_p_Zasoba"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
